@@ -9,8 +9,8 @@ int main(int argc, char* argv[])
 {
     FILE* fpt;
     char first[20][30], last[20][30];
-    char(*first_ptr)[30] = first;
-    char(*last_ptr)[30]  = last;
+    char *last_ptr = last;
+    char *first_ptr = first;
     int i, j, total = 0;
 
     if (argc != 2) {
