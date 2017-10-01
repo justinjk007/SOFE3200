@@ -23,7 +23,12 @@ int main(int argc, char* argv[])
         exit(0);
     }
 
-    total = ReadData(fpt, first_ptr, last_ptr);
+    total = ReadData(fpt, first_ptr, last_ptr); /* TODO: Fix this later */
+
+    while (1) {
+        if (fscanf(fpt, "%s %s", last[total], first[total]) != 2) break;
+        total++;
+    }
 
     for (i = 0; i < total; i++) {
         if (first[i][0] >= 'a' && first[i][0] <= 'z') first[i][0] = first[i][0] - 'a' + 'A';
@@ -51,10 +56,7 @@ int ReadData(FILE* fpt, char* first[][30], char* last[][30])
      */
     int total = 0;
 
-    while (1) {
-        if (fscanf(fpt, "%s %s", last[total], first[total]) != 2) break;
-        total++;
-    }
+    /* TODO: Copy and paste the read file bit later */
 
     return total;
 }
