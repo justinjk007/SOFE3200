@@ -9,8 +9,8 @@ int main(int argc, char* argv[])
 {
     FILE* fpt;
     char first[20][30], last[20][30];
-    char *last_ptr = last;
-    char *first_ptr = first;
+    char* last_ptr  = &last[0];
+    char* first_ptr = &first[0];
     int i, j, total = 0;
 
     if (argc != 2) {
@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
     for (i = 0; i < total; i++) {
         if (last[i][0] >= 'a' && last[i][0] <= 'z') last[i][0] = last[i][0] - 'a' + 'A';
 
-        for (j                                                     = 1; j < strlen(last[i]); j++)
+        for (j = 1; j < strlen(last[i]); j++)
             if (last[i][j] >= 'A' && last[i][j] <= 'Z') last[i][j] = last[i][j] - 'A' + 'a';
     }
 
