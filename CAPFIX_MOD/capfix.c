@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
         exit(0);
     }
 
-    total = readData(fpt, first_ptr, last_ptr); /* TODO: Fix this later */
+    total = readData(fpt, first_ptr, last_ptr);
 
 
     for (int i = 0; i < total; i++) {
