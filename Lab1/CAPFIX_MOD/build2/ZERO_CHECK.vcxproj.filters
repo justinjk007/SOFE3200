@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\100588814\Documents\GitHub\SOFE3200\CAPFIX_MOD\build2\CMakeFiles\cc916f45d3cb75763eac1581eaf37ee0\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{45719342-2DF2-3EDE-968D-6AC78FD001FB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
