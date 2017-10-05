@@ -3,16 +3,7 @@ Repository holds the contents of Labs for SOFE3200 any other code snippets that 
 
 ## How to build and run the files
 
-### Install GCC (The Gnu C compiler) from a PPA.
-
-```shell
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-sudo apt-get update
-sudo apt-get install gcc-6 g++-6
-```
-You are also installing g++ which is good. 
-
-Test if GCC is installed like this `gcc --version` should show you version 6.x
+Make sure you have gcc installed `gcc --version`
 
 ### Install cmake-build system from a PPA(Ubuntu/Debian/Linux Mint).
 
