@@ -40,8 +40,8 @@ int main(int argc, char* argv[])
     f  = fopen("input.txt", "r");
     f2 = fopen("Dante.txt", "w");
 
-    if (!f) {
-        printf("file didnt open properly\n");
+    if (f == NULL || f2 == NULL) {
+        printf("Files didnt open properly\n");
         exit(1);
     }  // if file doesnt open properly, exit program
 
