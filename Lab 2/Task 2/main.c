@@ -8,14 +8,11 @@
 
 int main(int argc, char* argv[])
 {
-    printf("in main, starting program \n");
-
     // intialize f and f2 as file type variables
     FILE* f;
     FILE* f2;
 
     // Initialize all the strings to look for, and all the corresponding strings to change them to
-
     char* str1 = "Inferno";
     char* str2 = "In dark woods";
     char* str3 = "those woods";
@@ -48,8 +45,6 @@ int main(int argc, char* argv[])
         exit(1);
     }  // if file doesnt open properly, exit program
 
-    printf("file opened properly\n");
-
     // Putting input.txt into a manipulatable c string
     //---------------------------------------------------
     fseek(f, 0, SEEK_END);
@@ -76,9 +71,6 @@ int main(int argc, char* argv[])
             substring1[7] = '\0';
 
             if (strcmp(substring1, str1) == 0) {
-                printf("%s\n", str1);
-                printf("\n");
-                printf("changing substring\n");
                 fputs(str1b, f2);  // replaces inferno with Pardisio
                 // increments i counter so it doesnt read the rest of the substrings characters
                 i += (strlen(str1)) - 1;
@@ -91,19 +83,10 @@ int main(int argc, char* argv[])
             substring2[13] = '\0';
 
             if (strcmp(substring2, str2) == 0) {
-                printf("%s\n", str2);
-                printf("\n");
-                printf("changing substring\n");
                 fputs(str2b, f2);  // replaces in dark woods with using Windows 8.1
                 i += (strlen(str2) - 1);
                 flag = 1;
             }
-
-            printf("current substring is:\n");
-            printf("%s\n", substring2);
-
-            printf("string comparison number is:");
-            printf("%d\n", strcmp(substring1, str1));
 
             // checks for "those woods"
             char substring3[11];
@@ -111,9 +94,6 @@ int main(int argc, char* argv[])
             substring3[11] = '\0';
 
             if (strcmp(substring3, str3) == 0) {
-                printf("%s\n", str3);
-                printf("\n");
-                printf("changing substring\n");
                 fputs(str3b, f2);  // replaces those woods with Windows 8.1
                 i += (strlen(str3) - 1);
                 flag = 1;
@@ -125,9 +105,6 @@ int main(int argc, char* argv[])
             substring4[8] = '\0';
 
             if (strcmp(substring4, str4) == 0) {
-                printf("%s\n", str4);
-                printf("\n");
-                printf("changing substring\n");
                 fputs(str4b, f2);  // replaces to enter with to use 8.1
                 i += (strlen(str4) - 1);
                 flag = 1;
@@ -139,9 +116,6 @@ int main(int argc, char* argv[])
             substring5[5] = '\0';
 
             if (strcmp(substring5, str5) == 0) {
-                printf("%s\n", str5);
-                printf("\n");
-                printf("changing substring\n");
                 fputs(str5b, f2);  // replaces inferno with pardisio
                 i += (strlen(str5) - 1);
                 flag = 1;
@@ -153,9 +127,6 @@ int main(int argc, char* argv[])
             substring6[12] = '\0';
 
             if (strcmp(substring6, str6) == 0) {
-                printf("%s\n", str6);
-                printf("\n");
-                printf("changing substring\n");
                 fputs(str6b, f2);  // replaces inferno with pardisio
                 i += (strlen(str6) - 1);
                 flag = 1;
@@ -167,9 +138,6 @@ int main(int argc, char* argv[])
             substring7[9] = '\0';
 
             if (strcmp(substring7, str7) == 0) {
-                printf("%s\n", str7);
-                printf("\n");
-                printf("changing substring\n");
                 fputs(str7b, f2);  // replaces inferno with pardisio
                 i += (strlen(str7) - 1);
                 flag = 1;
@@ -181,9 +149,6 @@ int main(int argc, char* argv[])
             substring8[6] = '\0';
 
             if (strcmp(substring8, str8) == 0) {
-                printf("%s\n", str8);
-                printf("\n");
-                printf("changing substring\n");
                 fputs(str8b, f2);  // replaces inferno with pardisio
                 i += (strlen(str8) - 1);
                 flag = 1;
@@ -195,9 +160,6 @@ int main(int argc, char* argv[])
             substring9[5] = '\0';
 
             if (strcmp(substring9, str9) == 0) {
-                printf("%s\n", str9);
-                printf("\n");
-                printf("changing substring\n");
                 fputs(str9b, f2);  // replaces inferno with pardisio
                 i += (strlen(str9) - 1);
             }
@@ -208,7 +170,8 @@ int main(int argc, char* argv[])
             }
         }
     }
-    printf("end of program \n");
+    printf("End of program.. \n");
+    printf("Finished riting files \n");
     fclose(f2);
     return 0;
 }
