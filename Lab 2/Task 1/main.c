@@ -8,6 +8,11 @@ int main()
 
     // Open file to read contents
     fptr = fopen("Input.txt", "r");
+    if(fptr == NULL){
+	// Handle file reading errors safely
+	printf("Opening input file failed\n");
+	exit(1);
+    }
     c = fgetc(fptr);
     // Display contents of the file
     printf("The contents of Input.txt is: \n\n");
@@ -20,6 +25,11 @@ int main()
     a        = 'a';  // I don't know what to say here
     b        = 'b';
     out_file = fopen("Heaven.txt", "w");  // Open file for writing
+    if(out_file == NULL){
+	// Handle file reading errors safely
+	printf("Opening input file failed\n");
+	exit(1);
+    }
     printf("\nThe contents of Input.txt after changing a's with b's is: \n\n");
     d = fgetc(fptr);
 
