@@ -171,7 +171,7 @@ int main(int argc, char* argv[])
         }
     }
     printf("End of program.. \n");
-    printf("Finished riting files \n");
+    printf("Finished Writing files \n");
     fclose(f2);
     return 0;
 }
