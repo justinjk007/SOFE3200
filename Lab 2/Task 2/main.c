@@ -67,7 +67,7 @@ int main(int argc, char* argv[])
 
             // checks if substring is "Inferno", if so, then it replaces it
             char substring1[7];
-            memcpy(substring1, &buffer[i], 7);
+            memmove(substring1, &buffer[i], 7);
             substring1[7] = '\0';
 
             if (strcmp(substring1, str1) == 0) {
@@ -79,7 +79,7 @@ int main(int argc, char* argv[])
 
             // checks for "in dark woods"
             char substring2[13];
-            memcpy(substring2, &buffer[i], 13);
+            memmove(substring2, &buffer[i], 13);
             substring2[13] = '\0';
 
             if (strcmp(substring2, str2) == 0) {
@@ -90,7 +90,7 @@ int main(int argc, char* argv[])
 
             // checks for "those woods"
             char substring3[11];
-            memcpy(substring3, &buffer[i], 11);
+            memmove(substring3, &buffer[i], 11);
             substring3[11] = '\0';
 
             if (strcmp(substring3, str3) == 0) {
@@ -101,7 +101,7 @@ int main(int argc, char* argv[])
 
             // checks for "to enter"
             char substring4[8];
-            memcpy(substring4, &buffer[i], 8);
+            memmove(substring4, &buffer[i], 8);
             substring4[8] = '\0';
 
             if (strcmp(substring4, str4) == 0) {
@@ -112,7 +112,7 @@ int main(int argc, char* argv[])
 
             // checks for "crest"
             char substring5[5];
-            memcpy(substring5, &buffer[i], 5);
+            memmove(substring5, &buffer[i], 5);
             substring5[5] = '\0';
 
             if (strcmp(substring5, str5) == 0) {
@@ -123,7 +123,7 @@ int main(int argc, char* argv[])
 
             // checks for "below a hill"
             char substring6[12];
-            memcpy(substring6, &buffer[i], 12);
+            memmove(substring6, &buffer[i], 12);
             substring6[12] = '\0';
 
             if (strcmp(substring6, str6) == 0) {
@@ -134,7 +134,7 @@ int main(int argc, char* argv[])
 
             // checks for "shoulders"
             char substring7[9];
-            memcpy(substring7, &buffer[i], 9);
+            memmove(substring7, &buffer[i], 9);
             substring7[9] = '\0';
 
             if (strcmp(substring7, str7) == 0) {
@@ -145,7 +145,7 @@ int main(int argc, char* argv[])
 
             // checks for "planet"
             char substring8[6];
-            memcpy(substring8, &buffer[i], 6);
+            memmove(substring8, &buffer[i], 6);
             substring8[6] = '\0';
 
             if (strcmp(substring8, str8) == 0) {
@@ -156,7 +156,7 @@ int main(int argc, char* argv[])
 
             // checks for "dante"
             char substring9[5];
-            memcpy(substring9, &buffer[i], 5);
+            memmove(substring9, &buffer[i], 5);
             substring9[5] = '\0';
 
             if (strcmp(substring9, str9) == 0) {
@@ -171,7 +171,7 @@ int main(int argc, char* argv[])
         }
     }
     printf("End of program.. \n");
-    printf("Finished riting files \n");
+    printf("Finished Writing files \n");
     fclose(f2);
     return 0;
 }
