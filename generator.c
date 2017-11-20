@@ -3,13 +3,20 @@
 #include <stdio.h>
 #include "generator.h"
 
-int main()
+int main(char argv[], int args) 
 {
-	// Create a file with a pointer.
-	FILE *f = fopen("Spam.txt", "w");
-	// Call generate function using file.
+	// Create/open file with pointer
+	FILE *f = fopen("spam.txt", "w");
+	// Start clock
+	clock_t begin = clock();
+	// Call generate function
 	generate(f);
-	// Successfully exit.
+	// Start another clock to use for difference
+	clock_t end = clock();
+	printf("%f", (double)((end - begin) / CLOCKS_PER_SEC));
+	// Close file to prevent memory leaks
+	fclose(f);
+	// Exit 
 	return 0;
 }
 
